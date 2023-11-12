@@ -1,0 +1,70 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-zbSvSxttlU85i9Lz5AB5n5n5Y5Q5yh5ih/uKjJGwZvFpPd7J8XtnB1H0usGv/33Kmgndg8vcA/20Jt03A+0N/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-WsJY+VReMhkaZJ7fTccTWrcrG7Wj+X9ujyKLNCJyvukghjndW8NNtGJzfogJwZv+mxvk7W8lBy9N/hyN0K0irQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+<body>
+    <!-- <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-lg-2 sidebar">
+            Sidebar content goes here
+          </div>
+          <div class="col-md-9 col-lg-10">
+            Main content goes here
+          </div>
+        </div>
+    </div> -->
+
+      <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        Toggle Sidebar
+      </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 sidebar" id="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                Toggle Sidebar
+              </button>
+            </div>
+            <div class="col-md-9 col-lg-10">
+                Main Content Goes Here!!!!!!. By Chat Gpt, I am the wisest AI tool
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls>Okay</button>
+            </div>
+        </div>
+    </div>
+
+      
+      
+      <style>
+        .sidebar {
+          background-color: #f8f9fa;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          padding: 20px;
+        }
+        
+        @media (max-width: 991.98px) {
+          .sidebar {
+            position: static;
+            height: auto;
+            padding: 0;
+          }
+        }
+        </style>
+        
+      
+</body>  
